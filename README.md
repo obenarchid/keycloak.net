@@ -1,22 +1,23 @@
-# Installer le serveur
+# Keycloak 18.0.0 avec .NET 6
+## Installer le serveur
 1. Télécharger keycloak-11.0.3.[zip|tar.gz] à partir de Keycloak downloads.
 2. Placer le fichier dans un répertoire que vous choisissez.
 3. Décompresser le fichier ZIP à l'aide de l'utilitaire de décompression approprié, tel que jar, tar ou unzip.
 
-# Démarrer le serveur
+## Démarrer le serveur
 Aller dans le dossier bin et exécuter la commande suivante :
 ```kc.bat start-dev```
 
-# Créer un administrateur
+## Créer un administrateur
 1. Accéder à l’adresse suivante : http://localhost:8080/.
 2. Créer un administrateur dans Administration Console.
 
-# Accéder à la console d'administrateur
+## Accéder à la console d'administrateur
 1. Accéder à l’adresse suivante : http://localhost:8080/.
 2. Cliquer sur Administration Console.
 3. Entrer le mot de passe d’administrateur.
 
-# Configurer l’audience dans Keycloack
+## Configurer l’audience dans Keycloack
 - Ajouter realm "keycloak-demo".
 - Ajouter un client “my-app”.
 - Accéder au menu "Client Scopes".
@@ -31,7 +32,7 @@ Aller dans le dossier bin et exécuter la commande suivante :
     - Accéder au Client Scopes dans les paramètres de “my-app”.
     - Ajouter Available Client Scopes "good-service" à  Assigned Default Client Scopes.
 
-# Créer un utilisateur 
+## Créer un utilisateur 
 - Accéder au menu Users.
 - Cliquer sur Add user.
   - Remplir le champ Username  par “user”.
@@ -39,7 +40,7 @@ Aller dans le dossier bin et exécuter la commande suivante :
   - Entrer et confirmer le mot de passe “test1234”.
   - Choisir OFF pour Temporary.
 
-# Utilisation
+## Utilisation
 - Exécuter la solution.
 - Via postman ou tout autre client REST, vous devriez pouvoir obtenir le jeton et appeler l'API sécurisée :
 ```
